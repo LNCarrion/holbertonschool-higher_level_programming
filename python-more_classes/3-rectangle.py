@@ -59,10 +59,10 @@ class Rectangle:
         '''print the rectangle in the terminal with a # '''
 
         if self.__width == 0 or self.__height == 0:
-            return ("")
+            return ""
 
         arr = ""
-        for i in range(self.__height == 0):
+        for i in range(self.__height):
             for j in range(self.__width):
                 arr += "#"
             if i is not self.__height - 1:
