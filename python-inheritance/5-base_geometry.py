@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """creating a empty class"""
 
+
 class BaseGeometry:
     '''
     this is an empty class
