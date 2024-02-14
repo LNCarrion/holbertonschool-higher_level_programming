@@ -41,8 +41,7 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__width = value
 
-
-    """ setters """
+    """setters"""
     @height.setter
     def height(self, value):
         if type(value) is not int:
@@ -51,8 +50,7 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         self.__height = value
 
-
-    """ setters """
+    """setters"""
     @x.setter
     def x(self, value):
         if type(value) is not int:
@@ -61,8 +59,7 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
         self.__x = value
 
-
-    """ setters """
+    """setter """
     @y.setter
     def y(self, value):
         if type(value) is not int:
@@ -71,7 +68,6 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
-    
     def area(self):
         """returns the area of the rectangle"""
         return self.__height * self.__width
