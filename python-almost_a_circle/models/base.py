@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """class base"""
 
+
 class Base():
     """private atribute"""
     __nb_objects = 0
