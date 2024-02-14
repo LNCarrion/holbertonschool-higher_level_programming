@@ -12,27 +12,24 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-    """getter of width"""
+    """getters"""
     @property
     def width(self):
         return self.__width
 
-    """getter of height"""
     @property
     def height(self):
         return self.__height
 
-    """getter of x"""
     @property
     def x(self):
         return self.__x
 
-    """getter of y"""
     @property
     def y(self):
         return self.__y
 
-    """ setter of width"""
+    """ setters """
     @width.setter
     def width(self, value):
         if type(value) is not int:
@@ -64,3 +61,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    "returns the area of the retangle"
+    def area(self):
+        return(self.__height * self.__width)
