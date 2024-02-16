@@ -40,5 +40,7 @@ class Square(Rectangle):
             self.y = args[3]
 
     def to_dictionary(self):
+        """creating a dictionary"""
         dict = {'id': self.id, 'x': self.x,
                 'size':self.size, 'y': self.y}
+        return dict

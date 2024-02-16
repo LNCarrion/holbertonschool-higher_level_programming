@@ -93,3 +93,9 @@ class Rectangle(Base):
         for key, value in kwargs.items():
             if hasattr(self, key):
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+        """creating a dictionary"""
+        dict = {'id': self.id, 'x': self.x, 'height': self.height,
+                'width':self.width, 'y': self.y}
+        return dict
