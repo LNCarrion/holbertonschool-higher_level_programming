@@ -26,6 +26,7 @@ class Square(Rectangle):
         return string
 
     def update(self, *args, **kwargs):
+        """update square class"""
         if len(args) == 0:
             for key, value in kwargs.items():
                 setattr(self, key, value)
