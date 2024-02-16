@@ -22,5 +22,5 @@ class Square(Rectangle):
     def __str__(self):
         """return the info of the class"""
         string = f"[Square] ({self.id})"
-        string += f" {self.x}/{self.y} - {self.height}"
+        string += f" {self.x}/{self.y} - {self.width}"
         return string
