@@ -43,7 +43,11 @@ class Base():
     """create a new instance"""
     @classmethod
     def create(cls, **dictionary):
+        """create a new instance"""
         if cls.__name__ == 'Rectangle':
             dummy = cls(1, 1)
         if cls.__name__ == 'Square':
             dummy = cls(1)
+
+        cls.update(dummy, **dictionary)
+        return dummy
