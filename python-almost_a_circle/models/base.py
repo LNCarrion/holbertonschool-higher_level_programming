@@ -22,7 +22,7 @@ class Base():
         return json.dumps(list_dictionary)
 
     @classmethod
-    def save_to_json_file(cls, list_objs):
+    def save_to_file(cls, list_objs):
         """json string to file"""
         if list_objs is None:
             list_objs = []
