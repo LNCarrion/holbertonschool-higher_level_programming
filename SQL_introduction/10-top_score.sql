@@ -1,4 +1,4 @@
---listing top score fist 
+-- listing top score fist 
 SELECT score, name
-From second_table
-ORDER BY score DESC;
+FROM second_table
+ORDER BY score DESC, name DESC;
