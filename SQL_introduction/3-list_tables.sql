@@ -1,2 +1,2 @@
 -- Listing the tables. 
-SHOW TABLE
+SHOW TABLE mysql
